@@ -2,7 +2,7 @@
 // User created objects are references to specified defined objects
 
 // Context vs Scope
-function b() {
+let b = () => {
     let a = 4;
     console.log(this);
 }
@@ -32,3 +32,9 @@ class Wizard extends Player {
 
 const wizard1 = new Wizard("Shelly", "Healer");
 const wizard2 = new Wizard("Shawn", "Dark Magic");
+
+console.log(wizard1)
+console.log(wizard2)
+
+wizard1.introduce()
+wizard2.play()
